@@ -15,6 +15,6 @@ Open [http://localhost:3000](http://localhost:3000).
 
 After GitHub Pages deploys, the site is at:
 
-**https://\<your-github-username\>.github.io/maxima-tyre/**
+**https://alexz1207.github.io/maxima-tyre/**
 
 The deploy runs automatically on every push to `main` (see `.github/workflows/deploy-pages.yml`).
