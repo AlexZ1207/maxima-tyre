@@ -79,7 +79,6 @@ export function HeroBackgroundVideo({ src }: HeroBackgroundVideoProps) {
         src={src}
         autoPlay
         muted
-        defaultMuted
         loop
         playsInline
         preload="auto"
