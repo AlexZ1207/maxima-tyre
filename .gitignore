@@ -32,6 +32,13 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
+!.env.example
+
+# extracted excel scratch
+/tmp-xlsx/
+
+# supabase CLI cache
+/supabase/.temp/
 
 # vercel
 .vercel

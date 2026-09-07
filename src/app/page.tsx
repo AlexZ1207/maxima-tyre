@@ -1,11 +1,11 @@
 import { Benefits } from "@/components/sections/Benefits";
+import { CatalogTeaser } from "@/components/sections/CatalogTeaser";
 import { FaqSection } from "@/components/sections/FaqSection";
 import { FinalCta } from "@/components/sections/FinalCta";
 import { Hero } from "@/components/sections/Hero";
-import { PricingPlans } from "@/components/sections/PricingPlans";
-import { ProductLines } from "@/components/sections/ProductLines";
-import { SizeFinder } from "@/components/sections/SizeFinder";
 import { TrustBar } from "@/components/sections/TrustBar";
+
+export const dynamic = "force-dynamic";
 
 export default function Home() {
   return (
@@ -14,9 +14,7 @@ export default function Home() {
       <div className="relative z-10 bg-background">
         <TrustBar />
         <Benefits />
-        <ProductLines />
-        <SizeFinder />
-        <PricingPlans />
+        <CatalogTeaser />
         <FaqSection />
         <FinalCta />
       </div>

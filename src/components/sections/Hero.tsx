@@ -4,7 +4,6 @@ import { asset } from "@/lib/asset";
 import { site } from "@/data/site";
 import { FadeIn } from "@/components/motion/FadeIn";
 import { HeroBackgroundVideo } from "@/components/sections/HeroBackgroundVideo";
-import { BrandLogo } from "@/components/visuals/BrandLogo";
 import { buttonVariants } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
@@ -15,7 +14,7 @@ export function Hero() {
   return (
     <section id="top" className="relative min-h-[92vh] border-b border-border/60">
       <HeroBackgroundVideo src={asset(hero.backgroundVideo)} />
-      <div className="relative z-10 mx-auto grid w-full max-w-6xl items-center gap-10 px-4 py-16 sm:px-6 lg:grid-cols-[1fr_auto] lg:py-24">
+      <div className="relative z-10 mx-auto flex w-full max-w-6xl items-center px-4 py-16 sm:px-6 lg:py-24">
         <FadeIn className="max-w-2xl">
           <Badge variant="secondary" className="mb-4 font-normal">
             {hero.eyebrow}
@@ -50,15 +49,6 @@ export function Hero() {
             <Star className="size-4 fill-primary text-primary" />
             {hero.trustLine}
           </p>
-        </FadeIn>
-        <FadeIn delay={0.1} className="flex justify-center lg:justify-end">
-          <div className="relative">
-            <div className="absolute inset-6 rounded-full bg-accent/40 blur-3xl" />
-            <BrandLogo
-              size={280}
-              className="relative size-44 drop-shadow-2xl sm:size-56 lg:size-[17.5rem]"
-            />
-          </div>
         </FadeIn>
       </div>
     </section>

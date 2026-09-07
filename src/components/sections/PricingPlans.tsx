@@ -61,7 +61,7 @@ export function PricingPlans() {
                   </CardContent>
                   <CardFooter className="border-t-0 bg-transparent">
                     <Link
-                      href={plan.id === "fleet" ? "#contact" : "#shop"}
+                      href={plan.id === "fleet" ? "/#contact" : "#shop"}
                       className={cn(
                         buttonVariants({
                           variant: plan.highlighted ? "default" : "outline",

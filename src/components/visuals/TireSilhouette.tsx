@@ -29,12 +29,12 @@ export function TireSilhouette({
         strokeWidth="3"
         opacity="0.55"
       />
-      {Array.from({ length: 24 }).map((_, i) => {
+      {Array.from({ length: 24 }, (_, i) => {
         const a = (i / 24) * Math.PI * 2;
-        const x1 = 100 + Math.cos(a) * 78;
-        const y1 = 100 + Math.sin(a) * 78;
-        const x2 = 100 + Math.cos(a) * 88;
-        const y2 = 100 + Math.sin(a) * 88;
+        const x1 = Math.round((100 + Math.cos(a) * 78) * 100) / 100;
+        const y1 = Math.round((100 + Math.sin(a) * 78) * 100) / 100;
+        const x2 = Math.round((100 + Math.cos(a) * 88) * 100) / 100;
+        const y2 = Math.round((100 + Math.sin(a) * 88) * 100) / 100;
         return (
           <line
             key={i}

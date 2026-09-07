@@ -9,8 +9,8 @@ export const site: SiteContent = {
     headline: "Grip you can feel at every lean",
     subheadline:
       "Street, sport, adventure, and touring compounds engineered for wet roads, long miles, and confident corners. Swap this copy when the real product is ready.",
-    primaryCta: { label: "Shop tires", href: "#shop" },
-    secondaryCta: { label: "Find your size", href: "#sizes" },
+    primaryCta: { label: "Shop tires", href: "/products" },
+    secondaryCta: { label: "Find your size", href: "/products#sizes" },
     trustLine: "4.8★ from 12,400 placeholder rider reviews",
     backgroundVideo: "/hero.mp4",
   },
@@ -55,6 +55,9 @@ export const site: SiteContent = {
       description:
         "All-rounder for city and weekend roads. Predictable lean, quiet ride, easy warm-up.",
       accent: "street",
+      compound: "Dual-compound street",
+      priceFrom: "$139",
+      sizes: ["120/70 ZR17", "160/60 ZR17", "180/55 ZR17"],
     },
     {
       id: "sport",
@@ -63,6 +66,9 @@ export const site: SiteContent = {
       description:
         "Sticky shoulders for canyon and circuit. Quick turn-in with a race-inspired profile.",
       accent: "sport",
+      compound: "High-grip sport",
+      priceFrom: "$189",
+      sizes: ["120/70 ZR17", "180/55 ZR17", "190/55 ZR17"],
     },
     {
       id: "adventure",
@@ -71,6 +77,9 @@ export const site: SiteContent = {
       description:
         "Cut blocks for dirt and tarmac. Built for loaded bikes and mixed surfaces.",
       accent: "adventure",
+      compound: "50/50 adventure",
+      priceFrom: "$159",
+      sizes: ["110/80 R19", "150/70 R17", "170/60 R17"],
     },
     {
       id: "touring",
@@ -79,6 +88,9 @@ export const site: SiteContent = {
       description:
         "High-mileage touring carcass for two-up trips. Stable, even wear, rain-ready.",
       accent: "touring",
+      compound: "Long-wear touring",
+      priceFrom: "$169",
+      sizes: ["120/70 ZR18", "150/70 ZR17", "180/55 ZR17"],
     },
   ],
   sizes: [
@@ -139,7 +151,7 @@ export const site: SiteContent = {
       id: "fitment",
       question: "How do I know these tires fit my bike?",
       answer:
-        "Match the size on your sidewall (for example 120/70 ZR17). This prototype does not look up a live catalog—use Find your size as a visual stand-in.",
+        "Lee la medida en el costado del caucho y eligela en el catalogo. Si no aparece, llama y confirmamos si la conseguimos.",
     },
     {
       id: "wear",
@@ -167,8 +179,10 @@ export const site: SiteContent = {
     },
   ],
   contact: {
-    phone: "+1 (555) 010-4488",
+    phone: "0424-2408013",
     email: "hello@example.com",
-    hours: "Mon–Sat, 9am–6pm",
+    hours: "Lun–Sab",
+    address:
+      "Calle 37 con Carrera 25 y Av Venezuela, Barquisimeto, Edo Lara",
   },
 };

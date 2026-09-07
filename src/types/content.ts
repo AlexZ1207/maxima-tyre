@@ -37,6 +37,9 @@ export interface ProductLine {
   badge: string;
   description: string;
   accent: "street" | "sport" | "adventure" | "touring";
+  compound: string;
+  priceFrom: string;
+  sizes: string[];
 }
 
 export interface TireSize {
@@ -65,6 +68,7 @@ export interface ContactInfo {
   phone: string;
   email: string;
   hours: string;
+  address: string;
 }
 
 export interface SiteContent {

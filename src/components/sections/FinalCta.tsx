@@ -1,7 +1,7 @@
 "use client";
 
 import { FormEvent, useState } from "react";
-import { Mail, Phone } from "lucide-react";
+import { MapPin, Mail, Phone } from "lucide-react";
 import { site } from "@/data/site";
 import { FadeIn } from "@/components/motion/FadeIn";
 import { Button } from "@/components/ui/button";
@@ -31,6 +31,10 @@ export function FinalCta() {
             closing conversion block.
           </p>
           <div className="mt-8 space-y-3 text-sm">
+            <p className="flex items-start gap-2">
+              <MapPin className="mt-0.5 size-4 shrink-0 text-brand" />
+              {site.contact.address}
+            </p>
             <p className="flex items-center gap-2">
               <Phone className="size-4 text-brand" />
               {site.contact.phone}
