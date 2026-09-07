@@ -99,18 +99,18 @@ export function ProductCatalog({ products, phone }: ProductCatalogProps) {
         <div className="mt-8 grid gap-4 rounded-2xl border border-border/70 bg-card/40 p-4 sm:grid-cols-2 lg:grid-cols-3">
           <label className="space-y-1.5 text-sm font-medium">
             Medida
-            <Input
-              list="tire-sizes"
+            <select
               value={selectedSize}
               onChange={(event) => pickSize(event.target.value)}
-              placeholder="90 / 90 - 18"
-              className="h-11"
-            />
-            <datalist id="tire-sizes">
+              className="h-11 w-full rounded-lg border border-input bg-card px-2.5 text-sm font-normal text-foreground"
+            >
+              <option value="">Selecciona una medida</option>
               {sizes.map((item) => (
-                <option key={item.size} value={item.size} />
+                <option key={item.size} value={item.size}>
+                  {item.size} ({item.count})
+                </option>
               ))}
-            </datalist>
+            </select>
           </label>
           <label className="space-y-1.5 text-sm font-medium">
             TT / TL
@@ -122,7 +122,7 @@ export function ProductCatalog({ products, phone }: ProductCatalogProps) {
                   setBrowseAll(false);
                 }
               }}
-              className="h-11 w-full rounded-lg border border-input bg-transparent px-2.5 text-sm font-normal dark:bg-input/30"
+              className="h-11 w-full rounded-lg border border-input bg-card px-2.5 text-sm font-normal text-foreground"
             >
               <option value="">Cualquiera</option>
               {constructions.map((value) => (
@@ -143,7 +143,7 @@ export function ProductCatalog({ products, phone }: ProductCatalogProps) {
                 }
               }}
               placeholder="YBR, GN125, PG60…"
-              className="h-11"
+              className="h-11 bg-card text-foreground"
             />
           </label>
         </div>

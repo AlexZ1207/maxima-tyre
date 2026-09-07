@@ -57,7 +57,7 @@ export function ProductForm({ product }: ProductFormProps) {
             id="category"
             name="category"
             defaultValue={product?.category ?? "tire"}
-            className="h-10 w-full rounded-lg border border-input bg-transparent px-2.5 text-sm dark:bg-input/30"
+            className="h-10 w-full rounded-lg border border-input bg-card px-2.5 text-sm text-foreground"
           >
             <option value="tire">Caucho</option>
             <option value="tube">Tripa</option>
